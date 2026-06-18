@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开云 · 看见此刻</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafafa;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1.5rem 4rem;
+            min-height: 100vh;
+        }
+
+        .page {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        /* 开场短句 —— 极简留白 + 轻盈语气 */
+        .opening {
+            margin-bottom: 3.2rem;
+            letter-spacing: 0.01em;
+        }
+
+        .opening .small-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.6rem;
+            font-weight: 400;
+        }
+
+        .opening h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 1.4rem;
+            color: #151515;
+        }
+
+        .opening .sub {
+            font-size: 1rem;
+            color: #4a4a4a;
+            max-width: 600px;
+            border-left: 3px solid #ccc;
+            padding-left: 1.2rem;
+        }
+
+        /* 承接段落 */
+        .context {
+            margin-bottom: 3.6rem;
+            font-size: 1rem;
+            color: #2b2b2b;
+        }
+
+        .context p {
+            margin-bottom: 1.2rem;
+        }
+
+        .context a {
+            color: #1e1e1e;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-color: #b0b0b0;
+            font-weight: 500;
+            transition: text-decoration-color 0.2s;
+        }
+
+        .context a:hover {
+            text-decoration-color: #1e1e1e;
+        }
+
+        .context .highlight {
+            background: #f0f0f0;
+            padding: 0 0.2rem;
+        }
+
+        /* 特点列表 —— 卡片式，每项灵活 */
+        .feature-list {
+            margin-bottom: 3.8rem;
+        }
+
+        .feature-item {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.6rem 1.8rem;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02), 0 0 0 1px rgba(0,0,0,0.02);
+            transition: box-shadow 0.2s, transform 0.15s;
+        }
+
+        .feature-item:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.03);
+            transform: translateY(-2px);
+        }
+
+        .feature-item h3 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+            letter-spacing: -0.01em;
+        }
+
+        .feature-item p {
+            color: #4a4a4a;
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .feature-item .emojii {
+            display: inline-block;
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* 温和结尾 */
+        .gentle-close {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 2.2rem;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            color: #5a5a5a;
+            text-align: left;
+        }
+
+        .gentle-close .sign {
+            font-size: 0.85rem;
+            color: #9a9a9a;
+            margin-top: 1rem;
+        }
+
+        .gentle-close a {
+            color: #1e1e1e;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #cacaca;
+        }
+
+        .gentle-close a:hover {
+            text-decoration-color: #1e1e1e;
+        }
+
+        /* FAQ 摘要风格 */
+        .faq-note {
+            background: #f7f7f7;
+            padding: 1.2rem 1.5rem;
+            border-radius: 18px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #3c3c3c;
+        }
+
+        .faq-note strong {
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #eaeaea;
+            margin: 2.4rem 0;
+        }
+
+        /* 响应式 */
+        @media (max-width: 520px) {
+            body {
+                padding: 1.5rem 1.2rem 3rem;
+            }
+            .opening h1 {
+                font-size: 1.8rem;
+            }
+            .feature-item {
+                padding: 1.2rem 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- 开场短句 -->
+    <div class="opening">
+        <span class="small-label">· 第一眼 ·</span>
+        <h1>打开这个页面<br>你心里大概已经有了一个方向。</h1>
+        <div class="sub">
+            不用猜 —— 这里就是 <a href="https://www.chengyi-kaiyun.com.cn">开云</a> 所在的网站。
+        </div>
+    </div>
+
+    <!-- 承接段落：从用户快速识别用途的角度 -->
+    <div class="context">
+        <p>
+            很多人第一次来的时候，只是想确认一件事：这个网站是不是自己正在找的那个「<a href="https://www.chengyi-kaiyun.com.cn">开云</a>」？ 
+            答案很直接 —— 是的。 这里没有绕弯的导航，也没有大段的自我介绍。
+        </p>
+        <p>
+            你只需要知道：如果你曾听说过一个叫 <strong>开云</strong> 的地方，或者有人向你提起过这个名字，那么你现在站的位置就是它。 
+            一个页面，一个入口，清楚、安静，不额外占用你的注意力。
+        </p>
+    </div>
+
+    <!-- 特点列表 (差异化: 更像“判断依据”, 让用户自己确认) -->
+    <div class="feature-list">
+        <div class="feature-item">
+            <h3><span class="emojii">→</span> 名字对得上</h3>
+            <p>网站就叫「开云」—— 地址栏里写的是 chengyi-kaiyun，点开以后你也会看到同样的名字。 没有其他花哨的别称。</p>
+        </div>
+        <div class="feature-item">
+            <h3><span class="emojii">→</span> 场景很具体</h3>
+            <p>无论是通过搜索、朋友推荐还是其他方式过来，这个页面展示的就是开云的核心信息。 你不需要再翻三页去验证。</p>
+        </div>
+        <div class="feature-item">
+            <h3><span class="emojii">→</span> 没有多余干扰</h3>
+            <p>这里不会突然弹出让你注册或下载的浮窗。 你可以慢慢看，也可以直接点击文中的链接前往你想去的地方。</p>
+        </div>
+    </div>
+
+    <!-- 类似 FAQ 摘要 —— 自然嵌入，增加内容厚度 -->
+    <div class="faq-note">
+        <strong>一个小提示：</strong> 如果你只是想快速找到开云相关的联系方式或服务入口，页面中出现的所有带下划线的 
+        <a href="https://www.chengyi-kaiyun.com.cn">开云</a> 链接都会带你到同一处。 不需要反复寻找。
+    </div>
+
+    <!-- 温和结尾 + 再次自然嵌入链接 (句子中) -->
+    <div class="gentle-close">
+        <p>
+            互联网很大，但一个名字往往就对应一个地方。 希望这里的简洁能帮你节省一点时间 —— 
+            无论你是第一次听说 <a href="https://www.chengyi-kaiyun.com.cn">开云</a>，还是回来确认些什么。
+        </p>
+        <p>
+            慢慢看，不用急。 如果需要更详细的介绍，页面上的链接就在那里。
+        </p>
+        <div class="sign">—— 来自 开云 网站 · 2025</div>
+    </div>
+
+    <hr>
+    <!-- 补充说明：场景化收尾 (不重复前面) -->
+    <p style="font-size:0.85rem; color:#999; border-left:2px solid #ddd; padding-left:1rem; margin-top:0.8rem;">
+        <span style="font-weight:400;">如果你还不太确定：</span> 不妨把鼠标悬停在上面的链接上，看看地址栏 —— 
+        <code style="background:#f2f2f2; padding:0.1rem 0.4rem; border-radius:6px; font-size:0.8rem;">chengyi-kaiyun.com.cn</code> 
+        这个域名本身就是最直接的标识。
+    </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://andy84craig.github.io/chengyi-kaiyun-com-cn/sitemap.xml
